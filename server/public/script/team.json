@@ -1,0 +1,49 @@
+[
+	{"name":"Mischa",
+	 "position":"Chief technology officer",
+	 "Profession":"back-end infrastructure, machine learning",
+	 "TakitKnowhow":"system intergration, communications",
+	 "personGoal":"Team management"},
+
+	 {"name":"Arron",
+	 "position":"project management",
+	 "Profession":"data query, backend understanding, QA testing",
+	 "TakitKnowhow":"Communication external and internal, interpersonal skill",
+	 "personGoal":"Business development"},
+
+	{"name":"Enno",
+	 "position":"Sernior back-end developer",
+	 "Profession":"big data infrastructure and analysis, Java",
+	 "TakitKnowhow":"back-end structure planning, storm, ambition of trying",
+	 "personGoal":"supporting code society"},
+
+	{"name":"Frence",
+	 "position":"Machine learning analytic",
+	 "Profession":"Data analysis, python",
+	 "TakitKnowhow":"reframe problems, solutions and structure",
+	 "personGoal":"Don't know yet"},
+
+	{"name":"Davide",
+	 "position":"Senior Java developer",
+	 "Profession":"Java, database query, connection with ideas",
+	 "TakitKnowhow":"database knowledge, new tech intergations",
+	 "personGoal":"Retired early"},
+
+	{"name":"Luke",
+	 "position":"Senior Java developer",
+	 "Profession":"Java, database query, mobile and front-end skills",
+	 "TakitKnowhow":"systematic thinking, learning and communications",
+	 "personGoal":"Big data project"},
+
+	{"name":"Sid",
+	 "position":"Senior back-end developer",
+	 "Profession":"Php, database, front-end skills",
+	 "TakitKnowhow":"Server, backend knowledge, front-end collaboration",
+	 "personGoal":"Learning Java and do more system"},
+
+	{"name":"Ruby",
+	 "position":"Front-end developer Intern",
+	 "Profession":"Design skill, CSS, html and some JS libs",
+	 "TakitKnowhow":"Design thinking, front-end interaction, UX basic",
+	 "personGoal":"Senior front-end, personal business development"}
+]

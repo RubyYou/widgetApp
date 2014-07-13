@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hypothesis testing tool</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css">
+</head>
+<body>
+	<div class="container">
+
+		<!--Navigation Start -->
+		<div class="row">
+			<div class="navbar navbar-inverse" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Organizational analysis Dashboard</a>
+				</div>
+
+				<!--toggle show navigation-->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li ><a href="">One</a></li>
+						<li ><a href="">Two</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<!-- Main body -->
+		<!-- toggle navigation -->
+		<div class="row widget-toggle">
+			<button type="button" class="btn btn-success">Profile</button>
+			<button type="button" class="btn btn-success">content</button>
+			<button type="button" class="btn btn-success">Team Progress</button>
+			<button type="button" class="btn btn-success">Interactivity</button>
+			<button type="button" class="btn btn-success">Money</button>
+		</div>
+
+		<!-- First level -->
+		<div class="row">
+			<div class="col-sm-4 col-md-4">
+				<div class="profile" > <!--Can not co-exist with other angular app -->
+					<img src="https://pbs.twimg.com/profile_images/2633331108/d7250c67d743c334c2d84b60d08858fe.png" class="img-circle">
+					<p>Peerindex</p>
+					<form role="form">
+						<div class="form-group">
+							<!--the mth goal and year goal should have another type area after flip-->
+							<label for="mth-Goal"><!--{{mthGoal}}--></label>
+							<input type="text" ng-model="mthGoal" class="form-control" id="mth-goal" placeholder="Enter company's monthly goal">
+						</div>
+						<div class="form-group">
+							<label for="yr-Goal"><!--{{yrGoal}}--></label>
+							<input type="text" ng-model="yrGoal" class="form-control" id="yr-goal" placeholder="Enter company's yearly goal">
+						</div>
+					<button>Change Goal</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-sm-8 col-md-8">
+				<div ng-app="instantSearch"
+					 ng-controller="InstantSearchController"
+					 class="content">
+					 
+					<div class="bar">
+						<input type="text" ng-model="searchString"
+							   placeholder="Enter your search terms" />
+							   
+						<div class="pull-right">	   
+						    <a class="list-icon" 
+						       ng-class="{active: layout == 'list'}" 
+						       ng-click="layout = 'list'"></a>
+						    <a class="grid-icon" 
+						       ng-class="{active: layout == 'grid'}" 
+						       ng-click="layout = 'grid'"></a>
+						</div>
+					</div>
+					
+					<ul ng-show="layout == 'grid'" class="grid">
+						<!-- A view with big photos and no text -->
+						<li ng-repeat="i in items | searchFor:searchString">
+							<a href="{{i.url}}" target="_blank">
+							<img ng-src="{{i.image}}" /></a>
+							<p>{{i.title}}</p>
+						</li>
+					</ul>
+				
+					<ul ng-show="layout == 'list'" class="list">
+						<!-- A compact view smaller photos and titles -->
+						<li ng-repeat="i in items | searchFor:searchString">
+							<a href="{{i.url}}" target="_blank">
+							<img ng-src="{{i.image}}" /></a>
+							<p>{{i.title}}</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Second level -->
+		<div class="row">
+			<div class="col-sm-4 col-md-4">
+				<div class="team-progress">
+					<p>Team progress</p>
+					<div class="bars"></div>
+					<div class="summary">
+						<ul>
+							<li>info</li>
+							<li>info</li>
+							<li>info</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4"> 
+				<div class="activities">
+					<p>Activity</p>
+					<div class="nodes"></div>
+					<div class="summary">
+						<ul>
+							<li>info</li>
+							<li>info</li>
+							<li>info</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4"> 
+				<div class="money">
+					<p>Spending</p>
+					<div class="donut"></div>
+					<div class="summary">
+						<ul>
+							<li>info</li>
+							<li>info</li>
+							<li>info</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--JS start-->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+	<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="http://firebase.github.io/angularFire/angularFire.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="script/search.js"></script>
+	<script src="script/charts.js"></script>
+	
+</body>
+</html>
