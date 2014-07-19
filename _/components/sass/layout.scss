@@ -8,8 +8,7 @@
 ==================================================
 	#Fonts and Variables
 	#Basic framework
-	#Page Styles
-    */
+	#Page Styles */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic);
 
@@ -21,8 +20,6 @@ $standardBlue:#D8D8D8; // change to black - it used for simple
 $darkBlue:#555;
 $hoverBlue:#101c23;
 $Radius:5px;
-
-/* new variable */
 
 
 
@@ -232,13 +229,17 @@ $Radius:5px;
 .row-fluid{
 	margin-left:20px;
 	.span6, .span8{
-	margin-left:0;
+		margin-left:0;
 	}
-	.profile, .content, .team-progress, 
-	.activities, .money{
-	padding:20px;
-	min-height: 450px;
-	
+	.basicChart, .summary{
+		padding:20px;
+		margin-left:3em;
+		min-height: 350px;
+	}
+	.profile, .content,
+	.activities{
+		padding:20px;
+		min-height: 450px;
 	img{
 	width:150px;
 	}
@@ -250,13 +251,6 @@ i:hover{
 /*-------------------------------------------------
 		Team Capacity
 --------------------------------------------------*/
-.teamOut{
-	padding-right:20px;
-	border-right:1px solid $darkgrey;
-}
-.icon-camera{
-	margin:5px 10px;
-}
 .team{
 	margin-left:0;
 	border:1px solid $darkBlue;
@@ -340,7 +334,7 @@ i:hover{
 }
 .chartInfo{
 	margin:10px;
-	margin-top:-260px;
+	/*margin-top:-260px;*/
 	padding:10px;
 	width:200px;
 	height:180px;

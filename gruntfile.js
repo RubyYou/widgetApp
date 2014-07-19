@@ -29,7 +29,7 @@ module.exports = function(grunt){
 				tasks:['compass:dev']
 			},
 			html:{
-				files:['*/*.html']
+				files:['*.html']
 			},
 			php:{
 				files:['*/*.php']

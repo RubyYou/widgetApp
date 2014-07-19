@@ -7,18 +7,16 @@
 ==================================================
 	#Fonts and Variables
 	#Basic framework
-	#Page Styles
-    */
+	#Page Styles */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic);
-/* new variable */
 /*------------------------------------------------
 	 Global adjustment / overwriting some basic style
 -------------------------------------------------- */
-/* line 32, ../components/sass/layout.scss */
+/* line 29, ../components/sass/layout.scss */
 * {
   font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
-/* line 33, ../components/sass/layout.scss */
+/* line 30, ../components/sass/layout.scss */
 body {
   width: 100%;
   height: 100%;
@@ -29,16 +27,16 @@ body {
   /*------------------------------------------------
       Mobile Nav framework
   -------------------------------------------------- */ }
-  /* line 40, ../components/sass/layout.scss */
+  /* line 37, ../components/sass/layout.scss */
   body li {
     list-style: none; }
-  /* line 43, ../components/sass/layout.scss */
+  /* line 40, ../components/sass/layout.scss */
   body a:hover {
     text-decoration: none; }
-  /* line 46, ../components/sass/layout.scss */
+  /* line 43, ../components/sass/layout.scss */
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-weight: 300; }
-  /* line 53, ../components/sass/layout.scss */
+  /* line 50, ../components/sass/layout.scss */
   body .viewport {
     position: absolute;
     top: 0;
@@ -46,7 +44,7 @@ body {
     bottom: 0;
     left: 0;
     overflow: hidden; }
-    /* line 61, ../components/sass/layout.scss */
+    /* line 58, ../components/sass/layout.scss */
     body .viewport .frame {
       position: absolute;
       width: 200%;
@@ -55,19 +53,19 @@ body {
       bottom: 0;
       left: 0;
       /* end of view*/ }
-      /* line 69, ../components/sass/layout.scss */
+      /* line 66, ../components/sass/layout.scss */
       body .viewport .frame .navbar .navbar-inner {
         border-radius: 0; }
-      /* line 73, ../components/sass/layout.scss */
+      /* line 70, ../components/sass/layout.scss */
       body .viewport .frame .menu {
         height: 100%;
         background-color: #f6f6f6; }
-        /* line 77, ../components/sass/layout.scss */
+        /* line 74, ../components/sass/layout.scss */
         body .viewport .frame .menu.collapse {
           float: left;
           height: 100% !important;
           width: auto; }
-        /* line 83, ../components/sass/layout.scss */
+        /* line 80, ../components/sass/layout.scss */
         body .viewport .frame .menu.collapse.height {
           position: relative;
           height: 0;
@@ -76,7 +74,7 @@ body {
           -moz-transition: height 0.35s ease;
           -o-transition: height 0.35s ease;
           transition: height 0.35s ease; }
-        /* line 93, ../components/sass/layout.scss */
+        /* line 90, ../components/sass/layout.scss */
         body .viewport .frame .menu.collapse.width {
           position: relative;
           width: 0;
@@ -85,34 +83,34 @@ body {
           -moz-transition: width 0.35s ease;
           -o-transition: width 0.35s ease;
           transition: width 0.35s ease; }
-        /* line 103, ../components/sass/layout.scss */
+        /* line 100, ../components/sass/layout.scss */
         body .viewport .frame .menu.collapse.in.width {
           width: auto; }
-        /* line 107, ../components/sass/layout.scss */
+        /* line 104, ../components/sass/layout.scss */
         body .viewport .frame .menu.collapse.in.height {
           height: auto; }
-        /* line 110, ../components/sass/layout.scss */
+        /* line 107, ../components/sass/layout.scss */
         body .viewport .frame .menu .collapse-inner {
           position: relative;
           width: 200px;
           height: 100%; }
-        /* line 115, ../components/sass/layout.scss */
+        /* line 112, ../components/sass/layout.scss */
         body .viewport .frame .menu .navbar .navbar-inner {
           text-align: center;
           color: grey;
           font-size: 1.2em;
           line-height: 38px; }
-      /* line 124, ../components/sass/layout.scss */
+      /* line 121, ../components/sass/layout.scss */
       body .viewport .frame .view {
         width: 50%;
         height: 100%;
         overflow: auto;
         min-width: 1200px; }
-        /* line 130, ../components/sass/layout.scss */
+        /* line 127, ../components/sass/layout.scss */
         body .viewport .frame .view .navbar .navbar-inner .btn-navbar {
           display: block;
           float: left; }
-        /* line 134, ../components/sass/layout.scss */
+        /* line 131, ../components/sass/layout.scss */
         body .viewport .frame .view #content {
           margin: auto 15px;
           text-align: justify; }
@@ -121,13 +119,13 @@ body {
 /*-------------------------------------------------
 		Navigation inner content
 --------------------------------------------------*/
-/* line 148, ../components/sass/layout.scss */
+/* line 145, ../components/sass/layout.scss */
 .navToggle {
   margin: 10px 0 10px 20px;
   border: none;
   background-color: #555555;
   padding: 7px 12px; }
-  /* line 154, ../components/sass/layout.scss */
+  /* line 151, ../components/sass/layout.scss */
   .navToggle .icon-bar {
     width: 20px;
     height: 3px;
@@ -135,22 +133,22 @@ body {
     background-color: #d8d8d8;
     display: block; }
 
-/* line 162, ../components/sass/layout.scss */
+/* line 159, ../components/sass/layout.scss */
 .navToggle:hover {
   background-color: #d8d8d8; }
-  /* line 164, ../components/sass/layout.scss */
+  /* line 161, ../components/sass/layout.scss */
   .navToggle:hover .icon-bar {
     background-color: white; }
 
-/* line 169, ../components/sass/layout.scss */
+/* line 166, ../components/sass/layout.scss */
 .logo {
   width: 80%;
   margin: 0 auto; }
-  /* line 173, ../components/sass/layout.scss */
+  /* line 170, ../components/sass/layout.scss */
   .logo .img-circle {
     max-width: 150px;
     margin: 10px auto; }
-  /* line 177, ../components/sass/layout.scss */
+  /* line 174, ../components/sass/layout.scss */
   .logo h3 {
     font-weight: 100;
     letter-spacing: 3px;
@@ -158,56 +156,56 @@ body {
     text-align: center;
     margin-top: 0; }
 
-/* line 185, ../components/sass/layout.scss */
+/* line 182, ../components/sass/layout.scss */
 .primaryLinks {
   margin: 0;
   width: 100%; }
-  /* line 188, ../components/sass/layout.scss */
+  /* line 185, ../components/sass/layout.scss */
   .primaryLinks li {
     border-top: 1px solid #d8d8d8;
     padding: 10px 0; }
-  /* line 192, ../components/sass/layout.scss */
+  /* line 189, ../components/sass/layout.scss */
   .primaryLinks li:last-child {
     border-bottom: 1px solid #d8d8d8; }
-  /* line 195, ../components/sass/layout.scss */
+  /* line 192, ../components/sass/layout.scss */
   .primaryLinks a {
     padding-left: 20px;
     color: #d8d8d8; }
-  /* line 199, ../components/sass/layout.scss */
+  /* line 196, ../components/sass/layout.scss */
   .primaryLinks i {
     margin-right: 10px; }
 
-/* line 203, ../components/sass/layout.scss */
+/* line 200, ../components/sass/layout.scss */
 .primaryLinks li:hover {
   background: #101c23; }
 
-/* line 206, ../components/sass/layout.scss */
+/* line 203, ../components/sass/layout.scss */
 .subLinks {
   position: absolute;
   bottom: 0px;
   margin: 0;
   width: 100%; }
-  /* line 211, ../components/sass/layout.scss */
+  /* line 208, ../components/sass/layout.scss */
   .subLinks li {
     border-top: 1px solid #555555;
     background: #101c23;
     padding: 10px 0; }
-  /* line 216, ../components/sass/layout.scss */
+  /* line 213, ../components/sass/layout.scss */
   .subLinks a {
     padding-left: 20px;
     color: #d8d8d8; }
-  /* line 220, ../components/sass/layout.scss */
+  /* line 217, ../components/sass/layout.scss */
   .subLinks i {
     margin-right: 10px; }
 
-/* line 224, ../components/sass/layout.scss */
+/* line 221, ../components/sass/layout.scss */
 .primaryLinks a:hover, .subLinks a:hover {
   color: white; }
 
 /*-------------------------------------------------
 		content
 --------------------------------------------------*/
-/* line 232, ../components/sass/layout.scss */
+/* line 229, ../components/sass/layout.scss */
 .row-fluid {
   margin-left: 20px;
   /*-------------------------------------------------
@@ -219,88 +217,86 @@ body {
   /* ---------------------------------------------
   	The search input
   ----------------------------------------------- */ }
-  /* line 234, ../components/sass/layout.scss */
+  /* line 231, ../components/sass/layout.scss */
   .row-fluid .span6, .row-fluid .span8 {
     margin-left: 0; }
-  /* line 238, ../components/sass/layout.scss */
-  .row-fluid .profile, .row-fluid .content, .row-fluid .team-progress,
-  .row-fluid .activities, .row-fluid .money {
+  /* line 234, ../components/sass/layout.scss */
+  .row-fluid .basicChart, .row-fluid .summary {
+    padding: 20px;
+    margin-left: 3em;
+    min-height: 350px; }
+  /* line 240, ../components/sass/layout.scss */
+  .row-fluid .profile, .row-fluid .content,
+  .row-fluid .activities {
     padding: 20px;
     min-height: 450px; }
-    /* line 242, ../components/sass/layout.scss */
-    .row-fluid .profile img, .row-fluid .content img, .row-fluid .team-progress img,
-    .row-fluid .activities img, .row-fluid .money img {
+    /* line 243, ../components/sass/layout.scss */
+    .row-fluid .profile img, .row-fluid .content img,
+    .row-fluid .activities img {
       width: 150px; }
-  /* line 247, ../components/sass/layout.scss */
+  /* line 248, ../components/sass/layout.scss */
   .row-fluid i:hover {
     color: #d8d8d8; }
-  /* line 253, ../components/sass/layout.scss */
-  .row-fluid .teamOut {
-    padding-right: 20px;
-    border-right: 1px solid #333333; }
-  /* line 257, ../components/sass/layout.scss */
-  .row-fluid .icon-camera {
-    margin: 5px 10px; }
-  /* line 260, ../components/sass/layout.scss */
+  /* line 254, ../components/sass/layout.scss */
   .row-fluid .team {
     margin-left: 0;
     border: 1px solid #555555;
     display: block; }
-    /* line 264, ../components/sass/layout.scss */
+    /* line 258, ../components/sass/layout.scss */
     .row-fluid .team .span6 {
       min-width: 300px;
       min-height: 300px;
       padding: 20px; }
-  /* line 270, ../components/sass/layout.scss */
+  /* line 264, ../components/sass/layout.scss */
   .row-fluid .teamMember {
     border: 1px solid #555555;
     margin: 10px 0 0 15px; }
-    /* line 273, ../components/sass/layout.scss */
+    /* line 267, ../components/sass/layout.scss */
     .row-fluid .teamMember .memberQuality {
       margin-left: 20px; }
-  /* line 277, ../components/sass/layout.scss */
+  /* line 271, ../components/sass/layout.scss */
   .row-fluid .teamMember:nth-child(2n) {
     margin-left: 0; }
-  /* line 280, ../components/sass/layout.scss */
+  /* line 274, ../components/sass/layout.scss */
   .row-fluid .memberImg {
     height: 100px;
     position: relative;
     background-color: #555555; }
-    /* line 284, ../components/sass/layout.scss */
+    /* line 278, ../components/sass/layout.scss */
     .row-fluid .memberImg img {
       height: 100px; }
-    /* line 287, ../components/sass/layout.scss */
+    /* line 281, ../components/sass/layout.scss */
     .row-fluid .memberImg .name {
       color: white;
       position: absolute;
       top: 50px;
       left: 20px; }
-    /* line 293, ../components/sass/layout.scss */
+    /* line 287, ../components/sass/layout.scss */
     .row-fluid .memberImg .position {
       margin-left: 10px; }
-  /* line 297, ../components/sass/layout.scss */
+  /* line 291, ../components/sass/layout.scss */
   .row-fluid .sideNote {
     height: 100%; }
-    /* line 299, ../components/sass/layout.scss */
+    /* line 293, ../components/sass/layout.scss */
     .row-fluid .sideNote .note {
       min-height: 120px;
       width: 300px;
       background-color: #f0f0f0;
       margin: 10px 10px 10px 0;
       display: block; }
-    /* line 306, ../components/sass/layout.scss */
+    /* line 300, ../components/sass/layout.scss */
     .row-fluid .sideNote .thumbs {
       width: 100px;
       overflow: hidden;
       background-color: #555555;
       margin: 0;
       padding: 0; }
-    /* line 312, ../components/sass/layout.scss */
+    /* line 306, ../components/sass/layout.scss */
     .row-fluid .sideNote .time {
       color: white;
       margin: 0 auto;
       text-align: center; }
-    /* line 317, ../components/sass/layout.scss */
+    /* line 311, ../components/sass/layout.scss */
     .row-fluid .sideNote .noteText {
       padding: 8px;
       max-width: 180px;
@@ -308,49 +304,49 @@ body {
       max-height: 100px;
       overflow: hidden;
       position: relative; }
-    /* line 325, ../components/sass/layout.scss */
+    /* line 319, ../components/sass/layout.scss */
     .row-fluid .sideNote .noteIcons {
       float: right;
       position: absolute;
       top: 90px;
       left: 150px; }
-      /* line 330, ../components/sass/layout.scss */
+      /* line 324, ../components/sass/layout.scss */
       .row-fluid .sideNote .noteIcons i {
         margin: 0 2px; }
-  /* line 338, ../components/sass/layout.scss */
+  /* line 332, ../components/sass/layout.scss */
   .row-fluid .chart p:first-child {
     padding: 10px; }
-  /* line 341, ../components/sass/layout.scss */
+  /* line 335, ../components/sass/layout.scss */
   .row-fluid .chartInfo {
     margin: 10px;
-    margin-top: -260px;
+    /*margin-top:-260px;*/
     padding: 10px;
     width: 200px;
     height: 180px;
     background-color: #f0f0f0;
     z-index: 99999; }
-  /* line 351, ../components/sass/layout.scss */
+  /* line 345, ../components/sass/layout.scss */
   .row-fluid .resourcePpl {
     border: 1px solid #f6f6f6;
     margin: 10px 0 0 0; }
-    /* line 355, ../components/sass/layout.scss */
+    /* line 349, ../components/sass/layout.scss */
     .row-fluid .resourcePpl .resourcePplInfo {
       max-width: 80%;
       display: inline-block; }
-    /* line 359, ../components/sass/layout.scss */
+    /* line 353, ../components/sass/layout.scss */
     .row-fluid .resourcePpl img {
       width: 70px;
       height: 70px;
       display: inline-block;
       margin: 10px;
       border-radius: 50%; }
-    /* line 366, ../components/sass/layout.scss */
+    /* line 360, ../components/sass/layout.scss */
     .row-fluid .resourcePpl .editIcons {
       display: inline-block;
       float: right;
       margin-right: 10px;
       padding-top: 10px; }
-  /* line 379, ../components/sass/layout.scss */
+  /* line 373, ../components/sass/layout.scss */
   .row-fluid .bar {
     background-color: #5c9bb7;
     background-image: -webkit-linear-gradient(top, #5c9bb7, #5392ad);
@@ -361,7 +357,7 @@ body {
     padding: 10px;
     position: relative;
     min-height: 60px; }
-    /* line 390, ../components/sass/layout.scss */
+    /* line 384, ../components/sass/layout.scss */
     .row-fluid .bar input {
       background: #fff no-repeat 13px 13px;
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU5NEY0RTlFMTA4NzExRTM5RTEzQkFBQzMyRjkyQzVBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU5NEY0RTlGMTA4NzExRTM5RTEzQkFBQzMyRjkyQzVBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTk0RjRFOUMxMDg3MTFFMzlFMTNCQUFDMzJGOTJDNUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTk0RjRFOUQxMDg3MTFFMzlFMTNCQUFDMzJGOTJDNUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4DjA/RAAABK0lEQVR42pTSQUdEURjG8dOY0TqmPkGmRcqYD9CmzZAWJRHVRIa0iFYtM6uofYaiEW2SRJtEi9YxIklp07ZkWswu0v/wnByve7vm5ee8M+85zz1jbt9Os+WiGkYdYxjCOx5wgFeXUHmtBSzpcCGa+5BJTCjEP+0nKWAT8xqe4ArPGEEVC1hHEbs2oBwdXkM7mj/JLZrad437sCGHOfUtcziutuYu2v8XUFF/4f6vMK/YgAH1HxkBYV60AR31gxkBYd6xAeF3VzMCwvzOBpypX8V4yuFRzX2d2gD/l5yjH4fYQEnzkj4fae5rJulF2sMXVrAsaTWttRFu4Osb+1jEDT71/ZveyhouTch2fINQL9hKefKjuYFfuznXWzXMTabyrvfyIV3M4vhXgAEAUMs7K0J9UJAAAAAASUVORK5CYII=);
@@ -378,7 +374,7 @@ body {
       outline: none;
       text-indent: 40px;
       float: left; }
-    /* line 409, ../components/sass/layout.scss */
+    /* line 403, ../components/sass/layout.scss */
     .row-fluid .bar a {
       background: #4987a1 center center no-repeat;
       width: 32px;
@@ -389,16 +385,16 @@ body {
       border-radius: 2px;
       cursor: pointer;
       margin-top: 5px; }
-    /* line 422, ../components/sass/layout.scss */
+    /* line 416, ../components/sass/layout.scss */
     .row-fluid .bar a.active {
       background-color: #c14694; }
-    /* line 426, ../components/sass/layout.scss */
+    /* line 420, ../components/sass/layout.scss */
     .row-fluid .bar a.list-icon {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkYzNkFCQ0ZBMTBCRTExRTM5NDk4RDFEM0E5RkQ1NEZCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkYzNkFCQ0ZCMTBCRTExRTM5NDk4RDFEM0E5RkQ1NEZCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjM2QUJDRjgxMEJFMTFFMzk0OThEMUQzQTlGRDU0RkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjM2QUJDRjkxMEJFMTFFMzk0OThEMUQzQTlGRDU0RkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7h1bLqAAAAWUlEQVR42mL8////BwYGBn4GCACxBRlIAIxAA/4jaXoPEkMyjJ+A/g9MDJQBRhYg8RFqMwg8RJIUINYLFDmBUi+ADQAF1n8ofk9yIAy6WPg4GgtDMRYAAgwAdLYwLAoIwPgAAAAASUVORK5CYII=); }
-    /* line 430, ../components/sass/layout.scss */
+    /* line 424, ../components/sass/layout.scss */
     .row-fluid .bar a.grid-icon {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBEQkMyQzE0MTBCRjExRTNBMDlGRTYyOTlBNDdCN0I4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjBEQkMyQzE1MTBCRjExRTNBMDlGRTYyOTlBNDdCN0I4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MERCQzJDMTIxMEJGMTFFM0EwOUZFNjI5OUE0N0I3QjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MERCQzJDMTMxMEJGMTFFM0EwOUZFNjI5OUE0N0I3QjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4MjPshAAAAXklEQVR42mL4////h/8I8B6IGaCYKHFGEMnAwCDIAAHvgZgRyiZKnImBQsACxB+hNoDAQyQ5osQZIT4gH1DsBZABH6AB8x/JaQzEig++WPiII7Rxio/GwmCIBYAAAwAwVIzMp1R0aQAAAABJRU5ErkJggg==); }
-  /* line 435, ../components/sass/layout.scss */
+  /* line 429, ../components/sass/layout.scss */
   .row-fluid ul.list {
     padding: 0;
     list-style: none;
@@ -407,23 +403,23 @@ body {
     text-align: left;
     max-height: 350px;
     overflow: scroll; }
-    /* line 444, ../components/sass/layout.scss */
+    /* line 438, ../components/sass/layout.scss */
     .row-fluid ul.list li {
       border-bottom: 1px solid #ddd;
       padding: 10px;
       overflow: hidden; }
-      /* line 449, ../components/sass/layout.scss */
+      /* line 443, ../components/sass/layout.scss */
       .row-fluid ul.list li img {
         width: 60px;
         height: 60px;
         float: left;
         border: none; }
-      /* line 456, ../components/sass/layout.scss */
+      /* line 450, ../components/sass/layout.scss */
       .row-fluid ul.list li p {
         margin-left: 75px;
         padding-top: 12px;
         color: #6e7a7f; }
-  /* line 464, ../components/sass/layout.scss */
+  /* line 458, ../components/sass/layout.scss */
   .row-fluid ul.grid {
     padding: 0;
     list-style: none;
@@ -432,19 +428,19 @@ body {
     text-align: left;
     max-height: 350px;
     overflow: scroll; }
-    /* line 473, ../components/sass/layout.scss */
+    /* line 467, ../components/sass/layout.scss */
     .row-fluid ul.grid li {
       display: inline-block;
       padding: 10px;
       overflow: hidden;
       vertical-align: top; }
-      /* line 479, ../components/sass/layout.scss */
+      /* line 473, ../components/sass/layout.scss */
       .row-fluid ul.grid li img {
         width: 100px;
         height: 100px;
         float: left;
         border: none; }
-      /* line 486, ../components/sass/layout.scss */
+      /* line 480, ../components/sass/layout.scss */
       .row-fluid ul.grid li p {
         width: 100px;
         overflow: hidden;
@@ -454,7 +450,7 @@ body {
         color: #fff;
         padding: 5px; }
 
-/* line 499, ../components/sass/layout.scss */
+/* line 493, ../components/sass/layout.scss */
 .aveLine p {
   font: 10px sans-serif;
   background-color: steelblue;
