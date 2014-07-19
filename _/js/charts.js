@@ -4,14 +4,14 @@
 		padding = 5;
 		
 	var bardata = [ 10,15,22,30,8,17,26,3];
-	var aveBar = 8; /* the data for average point or something to evaluate! */
+	var aveBar = 8; 
 	
 	var yScale = d3.scale.linear()
-						 .domain([0, 30]) /*should change to D3.max method to get the max one*/
+						 .domain([0, 30])
 						 .range([0, h]);
 
 	var barColor = d3.scale.linear()
-						 .domain([0,30]) /*should change to D3.max method to get the max one*/
+						 .domain([0,30])
 						 .range(["#46E6FF", "#08c"]);
 	
 	var yAxis = d3.svg.axis()
@@ -25,7 +25,7 @@
 	  			 .attr("height", h);
 	  			 /*.append("g")
 	  			 .attr("transform", "translate(30,0)")
-	  			 .call(yAxis);*/ /*here need if want yAxis, or can change to text show up on or in bottoms.*/
+	  			 .call(yAxis);*/ /* if want yAxis, change to text show up on or in bottoms.*/
 	  			 
 	var bar = bars.selectAll("rect")
 				  .data(bardata)
@@ -34,7 +34,7 @@
 				  		.attr("width", "20")
 				  		.attr("height", function(d){ return yScale(d); })
 				  		.attr("x", function(d,i){ return i * 40; })
-				  		.attr("y", function(d){ return h-yScale(d);}) /*get it reverse to bar start in the bottom */
+				  		.attr("y", function(d){ return h-yScale(d);}) /* get it reverse to bar start in the bottom */
 				  		.attr("fill", barColor );
 				  		
 	var aveLine = bars.append("rect")
@@ -45,7 +45,7 @@
 					  .attr("opacity","0.8")
 					  .attr("class","aveLine");
  
-	/*Not sure why, the text can not show up*/
+	/* todo: text show up */
 	var aveText = d3.select(".aveLine")
 					.append("text")
 					.text("average pi")
@@ -56,8 +56,6 @@
 					  .attr("font-size", "11px")
 					  .attr("fill", "white");
 					  
-	/* this is not as what I thought --> should follow http://bost.ocks.org/mike/bar/3/ or don't put axis, but put text on top and bottom
-	or try this http://bl.ocks.org/mbostock/4062085, http://bl.ocks.org/Caged/6476579 */
 
 /* Here start the pie chart */
 			
@@ -84,7 +82,7 @@
 					.enter()
 						.append("g")
 						.attr("class","arc")
-						.attr("transform", "translate("+w/2+","+h/2+")"); // not really sure what does it mean
+						.attr("transform", "translate("+w/2+","+h/2+")");
 				
 				arcs.append("path")
 				   .attr("fill",function(d, i){ return pieColor(i); })
@@ -120,7 +118,7 @@ var chart = board.append('svg:g');
          .attr('width', width)
          .attr('height', height);
 
-d3.json("script/resource.json", function(json) {
+d3.json("_/json/resource.json", function(json) {
 
 //Initialize a default force layout, using the nodes and edges in dataset
 
@@ -210,7 +208,8 @@ d3.json("script/resource.json", function(json) {
       }
 
     });
-/*
+
+/*  Here is a test the connection between another json with current data
     if (userId == true){
 
       $(".userID").stop().empty().hide(function(){
@@ -224,7 +223,6 @@ d3.json("script/resource.json", function(json) {
         });
 
       }).fadeIn(1000);
-
 
 
       /*d3.json("script/tweethtml.json",function(tweet){

@@ -1,4 +1,19 @@
-$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*
+* Widget app 1.0
+* A collection of often used JS script from some projects.
+* Extend to boostrap 2.3 framework
+*/
+
+/* Table of Content
+==================================================
+	#Fonts and Variables
+	#Nav framework
+	#Page Styles
+	#Media Queries */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic);
+
+$font-stack: 'Roboto', Helvetica, Arial, sans-serif;
 $lightgrey: #555;
 $darkgrey: #333;
 $lightbg:#f0f0f0;

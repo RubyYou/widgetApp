@@ -38,17 +38,17 @@ var app = angular.module("app",[]).config(function($routeProvider){
 app.factory('myService', function($http){
 	return{
 		getTeam: function() {
-		return $http.get('script/team.json').then(function (result) {
+		return $http.get('_/json/team.json').then(function (result) {
 		return result.data;
 		})
 		},
 		getNotes: function() {
-		return $http.get('script/teamNotes.json').then(function (result) {
+		return $http.get('_/json/teamNotes.json').then(function (result) {
 		return result.data;
 		})
 		},
 		getResource: function() {
-		return $http.get('script/resourcePeople.json').then(function (result) {
+		return $http.get('_/json/resourcePeople.json').then(function (result) {
 		return result.data;
 		})
 		}
