@@ -7,20 +7,24 @@
 /* Table of Content
 ==================================================
 	#Fonts and Variables
-	#Nav framework
+	#Basic framework
 	#Page Styles
-	#Media Queries */
+    */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic);
 
 $font-stack: 'Roboto', Helvetica, Arial, sans-serif;
-$lightgrey: #555;
+$lightgrey: #F6F6F6;
 $darkgrey: #333;
 $lightbg:#f0f0f0;
-$standardBlue:#4d7187;
-$darkBlue:#1b2933;
+$standardBlue:#D8D8D8; // change to black - it used for simple 
+$darkBlue:#555;
 $hoverBlue:#101c23;
 $Radius:5px;
+
+/* new variable */
+
+
 
 /*------------------------------------------------
 	 Global adjustment / overwriting some basic style
@@ -68,14 +72,14 @@ $Radius:5px;
       
     .menu {
       height:100%;
-      background-color: $darkBlue;
+      background-color: $lightgrey;
 
       &.collapse {
         float:left;
         height: 100% !important;
         width: auto;
       }
-  
+
       &.collapse.height {
         position: relative;
         height: 0;
@@ -85,7 +89,7 @@ $Radius:5px;
         -o-transition: height 0.35s ease;
         transition: height 0.35s ease;
       }
-  
+
       &.collapse.width {
         position: relative;
         width: 0;

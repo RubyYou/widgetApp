@@ -1,27 +1,32 @@
 //setter
 var app = angular.module("app",[]).config(function($routeProvider){
-	$routeProvider.when('/team',{
-		templateUrl:'team.html',
-		controller:'teamController'
+	$routeProvider.when('/d3Charts',{
+		templateUrl:'d3Charts.html',
+		//controller:'d3ChartsController'
 	});
 
-	$routeProvider.when('/network',{
-		templateUrl:'network.html',
-		controller:'networkController'
+	$routeProvider.when('/d3Cluster',{
+		templateUrl:'d3Cluster.html',
+		//controller:'d3ClusterController'
 	});
 
-	$routeProvider.when('/hypothesis',{
-		templateUrl:'hypothesis.html',
-		controller:'hypothesisController'
+	$routeProvider.when('/angularTemplate',{
+		templateUrl:'angularTemplate.html',
+		controller:'angularTemplateController'
 	});
 
-	$routeProvider.when('/leanCanvas',{
-		templateUrl:'leanCanvas.html',
-		controller:'leanCanvasController'
+	$routeProvider.when('/css3animate',{
+		templateUrl:'css3animate.html',
+		controller:'css3animateController'
+	});
+
+	$routeProvider.when('/phpAjax',{
+		templateUrl:'phpAjax.html',
+		controller:'phpAjaxController'
 	});
 
 	$routeProvider.otherwise({
-		redirectTo:'/team'
+		redirectTo:'/login'
 	});
 });
 
@@ -55,21 +60,18 @@ app.factory('myService', function($http){
 	}
 });
 
-app.controller('teamController',function($scope, myService){
-	$scope.members = myService.getTeam();
-	$scope.notes = myService.getNotes();
-});
 
-app.controller('networkController',function($scope, myService){
+
+app.controller('angularTemplateController',function($scope, myService){
 	$scope.resources = myService.getResource();
 	$scope.notes = myService.getNotes();
 });
 
-app.controller('hypothesisController',function($scope){
-	$scope.title = "Hypothesis Progress";
+app.controller('css3animateController',function($scope){
+	$scope.title = "Css3 animation - many parts comes from old websites";
 });
 
-app.controller('leanCanvasController',function($scope){
-	$scope.title = "Lean Canvas Overview";
+app.controller('phpAjaxController',function($scope){
+	$scope.title = "PHP + Ajax - ulac back to front test simple";
 });
 
