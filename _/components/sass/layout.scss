@@ -14,18 +14,16 @@
 
 $font-stack: 'Roboto', Helvetica, Arial, sans-serif;
 $lightgrey: #F6F6F6;
-$darkgrey: #333;
 $lightbg:#f0f0f0;
-$standardBlue:#D8D8D8; // change to black - it used for simple 
 $darkBlue:#555;
-$hoverBlue:#101c23;
+$standardDark:#111111;
 $Radius:5px;
 
 
 
-/*------------------------------------------------
+/*----------------------------------------------------
 	 Global adjustment / overwriting some basic style
--------------------------------------------------- */
+------------------------------------------------------ */
  *{  font-family: $font-stack; }
  body {
   width: 100%;
@@ -57,7 +55,7 @@ $Radius:5px;
   
 .frame {
   position: absolute;
-  width: 200%;
+  width: 180%;
   height: 100%;
   top: 0;
   bottom: 0;
@@ -106,7 +104,7 @@ $Radius:5px;
       }
       .collapse-inner {
         position: relative;
-        width: 200px;
+        width: 250px;
         height: 100%;
       }
       .navbar .navbar-inner {
@@ -115,7 +113,6 @@ $Radius:5px;
         font-size: 1.2em;
         line-height: 38px;
       }
-        
     }
 
     .view {
@@ -145,81 +142,62 @@ $Radius:5px;
 .navToggle{
 	margin: 10px 0 10px 20px;
 	border:none;
-	background-color:$darkBlue;
+	background-color:$lightgrey;
 	padding: 7px 12px;
 	
+	&:hover{
+	background-color:$standardDark;
+		.icon-bar{
+			background-color:white;
+		}
+	}
+
 	.icon-bar{
 		width: 20px;
 		height: 3px;
 		margin:3px 0;
-		background-color:$standardBlue;
+		background-color:$standardDark;
 		display:block;
-	}	
-}
-.navToggle:hover{
-	background-color:$standardBlue;
-	.icon-bar{
-	background-color:white;
 	}
 }
 
 .logo{
 	width:80%;
 	margin:0 auto;
+	text-align:center;
 	
-	.img-circle{
+	img{
 		max-width: 150px;
-		margin: 10px auto;
+		margin: 20px auto;
 	}
-	h3{
+	p{
 		font-weight: 100;
-		letter-spacing: 3px;
-		color:white;
-		text-align: center;	
-		margin-top:0;
+		text-align: center;
 	}
 }
-.primaryLinks{
+.primaryLinks, .subLinks{
 	margin:0;
 	width:100%;
 	li{
-	border-top:1px solid $standardBlue;
 	padding:10px 0;
-	}
-	li:last-child{
-	border-bottom:1px solid $standardBlue;	
+	&:hover{
+		background:$standardDark;
+		a{
+			color:white;
+			}
+		}
 	}
 	a{
 	padding-left: 20px;
-	color:$standardBlue;
+	color:$standardDark;
 	}
 	i{
-	margin-right:10px;	
+	margin-right:10px;
 	}
-}
-.primaryLinks li:hover{
-	background: $hoverBlue;
 }
 .subLinks{
 	position: absolute;
 	bottom:0px;
-	margin:0;
-	width:100%;
-	li{
-	border-top:1px solid $darkBlue;
-	background: $hoverBlue;
-	padding:10px 0;
-	}
-	a{
-	padding-left: 20px;
-	color:$standardBlue;
-	}
-	i{
-	margin-right:10px;	
-	}
-}
-.primaryLinks a:hover, .subLinks a:hover{
-	color:white;
 }
 
 /*-------------------------------------------------
@@ -246,7 +224,7 @@ $Radius:5px;
 }	
 
 i:hover{
-	color:$standardBlue;
+	color:$standardDark;
 }
 /*-------------------------------------------------
 		Team Capacity

@@ -68,10 +68,12 @@ app.controller('angularTemplateController',function($scope, myService){
 });
 
 app.controller('css3animateController',function($scope){
-	$scope.title = "Css3 animation - many parts comes from old websites";
+	$scope.title = "Css3 animation - Taking stuff from 2013 early stage websites";
+	$scope.intro = "Coming Soon";
 });
 
 app.controller('phpAjaxController',function($scope){
 	$scope.title = "PHP + Ajax - ulac back to front test simple";
+	$scope.intro = "Coming Soon";
 });
 
