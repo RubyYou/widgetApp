@@ -1,0 +1,27 @@
+
+<div id="angular" class="container">
+
+	<h3>{{title}}</h3>
+	<p>{{intro}}</p>
+
+	<hr/>
+
+	<div class="span12 pplDetail">
+		<div ng-model="people">
+			<img class="PplImg" src="img/unfoundB.gif"/>
+			<div class="PplInfo">
+				<h3 class="name">{{people[whichItem].Name}}
+					<small class="position">Special position: {{people[whichItem].InCharge}}</small></h3>
+				<p><b>Profile </b> {{people[whichItem].Profile}}</p>
+				<p><b>Already Supported </b>{{people[whichItem].Supported}}</p>
+				<p><b>Expected involvement </b> {{people[whichItem].ExpectSupport}} </p>
+				<p><b>Recent Activities / conversations </b> {{people[whichItem].RecentActivities}}</p>
+			</div>
+		</div>
+	</div>
+	<hr/>
+
+	<div class="text-center">
+		<a href="#/angularCMS" class="btn">Back to List</a>
+	</div>
+</div>

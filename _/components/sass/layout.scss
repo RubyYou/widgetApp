@@ -55,7 +55,7 @@ $Radius:5px;
   
 .frame {
   position: absolute;
-  width: 180%;
+  width: 200%;
   height: 100%;
   top: 0;
   bottom: 0;
@@ -210,8 +210,6 @@ $Radius:5px;
 		margin-left:0;
 	}
 	.basicChart, .summary{
-		padding:20px;
-		margin-left:3em;
 		min-height: 350px;
 	}
 	.profile, .content,
@@ -226,93 +224,16 @@ $Radius:5px;
 i:hover{
 	color:$standardDark;
 }
-/*-------------------------------------------------
-		Team Capacity
---------------------------------------------------*/
-.team{
-	margin-left:0;
-	border:1px solid $darkBlue;
-	display:block;
-	.span6{
-	min-width: 300px;
-	min-height: 300px;
-	padding:20px;
-	}
-}
-.teamMember{
-	border:1px solid $darkBlue;
-	margin:10px 0 0 15px;
-	.memberQuality{
-		margin-left: 20px;
-	}
-}
-.teamMember:nth-child(2n){
-	margin-left:0;
-	}
-.memberImg{
-	height:100px;
-	position:relative;
-	background-color:$darkBlue;
-	img{
-		height: 100px;
-	}
-	.name{
-		color:white;
-		position:absolute;
-		top:50px;
-		left:20px;
-	}
-	.position{
-		margin-left: 10px;
-	}
-}
-.sideNote{
-	height:100%;
-	.note{
-		min-height: 120px;
-		width:300px;
-		background-color:$lightbg;
-		margin:10px 10px 10px 0;
-		display: block;
-	}
-	.thumbs{
-		width:100px;
-		overflow:hidden;
-		background-color:$darkBlue;
-		margin:0; padding:0;
-	}
-	.time{
-		color:white;
-		margin:0 auto;
-		text-align: center;
-	}
-	.noteText{
-		padding:8px;
-		max-width:180px;
-		min-height: 100px;
-		max-height: 100px;
-		overflow: hidden; 
-		position: relative;
-	}
-	.noteIcons{
-		float:right;
-		position:absolute;
-		top:90px;
-		left:150px;
-		i{
-			margin: 0 2px;
-		}
-	}
-}
+
 /* -----------------------------------------------
-	Network Resources
+	D3 Charts
 ------------------------------------------------- */
 .chart p:first-child{
 	padding:10px;
 }
 .chartInfo{
 	margin:10px;
-	/*margin-top:-260px;*/
+	margin-top:-260px;
 	padding:10px;
 	width:200px;
 	height:180px;
@@ -320,27 +241,100 @@ i:hover{
 	z-index:99999;
 }
 
-.resourcePpl{
-	border:1px solid $lightgrey;
-	margin:10px 0 0 0;
+/* -----------------------------------------------
+	Angular
+------------------------------------------------- */
+#angular{
+	margin-bottom:3em;
 
-	.resourcePplInfo{
-		max-width: 80%;
-		display: inline-block;
+	h3{
+		margin:0;
 	}
-	img{
-		width:70px;
-		height: 70px;
-		display: inline-block;
-		margin:10px;
-		border-radius:50%;
+	input{
+		margin-top: 10px;
 	}
-	.editIcons{
-		display: inline-block;
-		float:right;
-		margin-right:10px;
-		padding-top:10px;
+	.row{
+		margin:0;
 	}
+	.span4{
+		margin-left:0;
+		background-color:$lightbg;
+		padding:5px 5px 5px 20px;
+		margin:6px;
+		pointer:cursor;
+		a{
+			color:$standardDark;
+		}
+		&:hover{
+			background-color: $standardDark;
+			a{
+				color:white;
+			}
+		}
+		.span8{
+			margin-top: 20px;
+			p{
+				margin-bottom: 5px;
+			}
+		}
+	}
+	hr{
+		clear:both;
+		margin:20px 0;
+	}
+	.gridIcon {
+		margin-top: 10px;
+		text-align: right;
+		
+		a{
+			cursor:pointer;
+		}
+		i{
+			background-color:$standardDark;
+			color:white;
+			padding:10px;
+			margin: 0 5px;
+			border-radius:$Radius;
+			&:hover{
+				background-color:$darkBlue;
+			}
+		}
+	}
+	//if it is layout list --> initial is grid.
+	.list{
+		.span12{
+			background-color:$lightbg;
+			padding:5px 5px 5px 20px;
+			margin:6px;
+			a{
+				p{
+					color:$standardDark;
+				}
+			}
+			&:hover{
+				background-color: $standardDark;
+				p{
+					color:white;
+				}
+			}
+		.span10{
+			padding-top: 2.5em;
+			}
+		}
+	}
+
+}
+
+
+.PplInfo{
+	width:100%;
+}
+img.PplImg{
+	width:70px;
+	height: 70px;
+	display: inline-block;
+	margin:10px;
+	border-radius:50%;
 }
 
 

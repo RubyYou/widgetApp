@@ -47,7 +47,7 @@ body {
     /* line 56, ../components/sass/layout.scss */
     body .viewport .frame {
       position: absolute;
-      width: 180%;
+      width: 200%;
       height: 100%;
       top: 0;
       bottom: 0;
@@ -185,11 +185,11 @@ body {
 /* line 207, ../components/sass/layout.scss */
 .row-fluid {
   margin-left: 20px;
-  /*-------------------------------------------------
-  		Team Capacity
-  --------------------------------------------------*/
   /* -----------------------------------------------
-  	Network Resources
+  	D3 Charts
+  ------------------------------------------------- */
+  /* -----------------------------------------------
+  	Angular
   ------------------------------------------------- */
   /* ---------------------------------------------
   	The search input
@@ -199,131 +199,114 @@ body {
     margin-left: 0; }
   /* line 212, ../components/sass/layout.scss */
   .row-fluid .basicChart, .row-fluid .summary {
-    padding: 20px;
-    margin-left: 3em;
     min-height: 350px; }
-  /* line 218, ../components/sass/layout.scss */
+  /* line 216, ../components/sass/layout.scss */
   .row-fluid .profile, .row-fluid .content,
   .row-fluid .activities {
     padding: 20px;
     min-height: 450px; }
-    /* line 221, ../components/sass/layout.scss */
+    /* line 219, ../components/sass/layout.scss */
     .row-fluid .profile img, .row-fluid .content img,
     .row-fluid .activities img {
       width: 150px; }
-  /* line 226, ../components/sass/layout.scss */
+  /* line 224, ../components/sass/layout.scss */
   .row-fluid i:hover {
     color: #111111; }
-  /* line 232, ../components/sass/layout.scss */
-  .row-fluid .team {
-    margin-left: 0;
-    border: 1px solid #555555;
-    display: block; }
-    /* line 236, ../components/sass/layout.scss */
-    .row-fluid .team .span6 {
-      min-width: 300px;
-      min-height: 300px;
-      padding: 20px; }
-  /* line 242, ../components/sass/layout.scss */
-  .row-fluid .teamMember {
-    border: 1px solid #555555;
-    margin: 10px 0 0 15px; }
-    /* line 245, ../components/sass/layout.scss */
-    .row-fluid .teamMember .memberQuality {
-      margin-left: 20px; }
-  /* line 249, ../components/sass/layout.scss */
-  .row-fluid .teamMember:nth-child(2n) {
-    margin-left: 0; }
-  /* line 252, ../components/sass/layout.scss */
-  .row-fluid .memberImg {
-    height: 100px;
-    position: relative;
-    background-color: #555555; }
-    /* line 256, ../components/sass/layout.scss */
-    .row-fluid .memberImg img {
-      height: 100px; }
-    /* line 259, ../components/sass/layout.scss */
-    .row-fluid .memberImg .name {
-      color: white;
-      position: absolute;
-      top: 50px;
-      left: 20px; }
-    /* line 265, ../components/sass/layout.scss */
-    .row-fluid .memberImg .position {
-      margin-left: 10px; }
-  /* line 269, ../components/sass/layout.scss */
-  .row-fluid .sideNote {
-    height: 100%; }
-    /* line 271, ../components/sass/layout.scss */
-    .row-fluid .sideNote .note {
-      min-height: 120px;
-      width: 300px;
-      background-color: #f0f0f0;
-      margin: 10px 10px 10px 0;
-      display: block; }
-    /* line 278, ../components/sass/layout.scss */
-    .row-fluid .sideNote .thumbs {
-      width: 100px;
-      overflow: hidden;
-      background-color: #555555;
-      margin: 0;
-      padding: 0; }
-    /* line 284, ../components/sass/layout.scss */
-    .row-fluid .sideNote .time {
-      color: white;
-      margin: 0 auto;
-      text-align: center; }
-    /* line 289, ../components/sass/layout.scss */
-    .row-fluid .sideNote .noteText {
-      padding: 8px;
-      max-width: 180px;
-      min-height: 100px;
-      max-height: 100px;
-      overflow: hidden;
-      position: relative; }
-    /* line 297, ../components/sass/layout.scss */
-    .row-fluid .sideNote .noteIcons {
-      float: right;
-      position: absolute;
-      top: 90px;
-      left: 150px; }
-      /* line 302, ../components/sass/layout.scss */
-      .row-fluid .sideNote .noteIcons i {
-        margin: 0 2px; }
-  /* line 310, ../components/sass/layout.scss */
+  /* line 231, ../components/sass/layout.scss */
   .row-fluid .chart p:first-child {
     padding: 10px; }
-  /* line 313, ../components/sass/layout.scss */
+  /* line 234, ../components/sass/layout.scss */
   .row-fluid .chartInfo {
     margin: 10px;
-    /*margin-top:-260px;*/
+    margin-top: -260px;
     padding: 10px;
     width: 200px;
     height: 180px;
     background-color: #f0f0f0;
     z-index: 99999; }
-  /* line 323, ../components/sass/layout.scss */
-  .row-fluid .resourcePpl {
-    border: 1px solid #f6f6f6;
-    margin: 10px 0 0 0; }
-    /* line 327, ../components/sass/layout.scss */
-    .row-fluid .resourcePpl .resourcePplInfo {
-      max-width: 80%;
-      display: inline-block; }
-    /* line 331, ../components/sass/layout.scss */
-    .row-fluid .resourcePpl img {
-      width: 70px;
-      height: 70px;
-      display: inline-block;
-      margin: 10px;
-      border-radius: 50%; }
-    /* line 338, ../components/sass/layout.scss */
-    .row-fluid .resourcePpl .editIcons {
-      display: inline-block;
-      float: right;
-      margin-right: 10px;
-      padding-top: 10px; }
-  /* line 351, ../components/sass/layout.scss */
+  /* line 247, ../components/sass/layout.scss */
+  .row-fluid #angular {
+    margin-bottom: 3em; }
+    /* line 250, ../components/sass/layout.scss */
+    .row-fluid #angular h3 {
+      margin: 0; }
+    /* line 253, ../components/sass/layout.scss */
+    .row-fluid #angular input {
+      margin-top: 10px; }
+    /* line 256, ../components/sass/layout.scss */
+    .row-fluid #angular .row {
+      margin: 0; }
+    /* line 259, ../components/sass/layout.scss */
+    .row-fluid #angular .span4 {
+      margin-left: 0;
+      background-color: #f0f0f0;
+      padding: 5px 5px 5px 20px;
+      margin: 6px;
+      pointer: cursor; }
+      /* line 265, ../components/sass/layout.scss */
+      .row-fluid #angular .span4 a {
+        color: #111111; }
+      /* line 268, ../components/sass/layout.scss */
+      .row-fluid #angular .span4:hover {
+        background-color: #111111; }
+        /* line 270, ../components/sass/layout.scss */
+        .row-fluid #angular .span4:hover a {
+          color: white; }
+      /* line 274, ../components/sass/layout.scss */
+      .row-fluid #angular .span4 .span8 {
+        margin-top: 20px; }
+        /* line 276, ../components/sass/layout.scss */
+        .row-fluid #angular .span4 .span8 p {
+          margin-bottom: 5px; }
+    /* line 281, ../components/sass/layout.scss */
+    .row-fluid #angular hr {
+      clear: both;
+      margin: 20px 0; }
+    /* line 285, ../components/sass/layout.scss */
+    .row-fluid #angular .gridIcon {
+      margin-top: 10px;
+      text-align: right; }
+      /* line 289, ../components/sass/layout.scss */
+      .row-fluid #angular .gridIcon a {
+        cursor: pointer; }
+      /* line 292, ../components/sass/layout.scss */
+      .row-fluid #angular .gridIcon i {
+        background-color: #111111;
+        color: white;
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 5px; }
+        /* line 298, ../components/sass/layout.scss */
+        .row-fluid #angular .gridIcon i:hover {
+          background-color: #555555; }
+    /* line 305, ../components/sass/layout.scss */
+    .row-fluid #angular .list .span12 {
+      background-color: #f0f0f0;
+      padding: 5px 5px 5px 20px;
+      margin: 6px; }
+      /* line 310, ../components/sass/layout.scss */
+      .row-fluid #angular .list .span12 a p {
+        color: #111111; }
+      /* line 314, ../components/sass/layout.scss */
+      .row-fluid #angular .list .span12:hover {
+        background-color: #111111; }
+        /* line 316, ../components/sass/layout.scss */
+        .row-fluid #angular .list .span12:hover p {
+          color: white; }
+      /* line 320, ../components/sass/layout.scss */
+      .row-fluid #angular .list .span12 .span10 {
+        padding-top: 2.5em; }
+  /* line 329, ../components/sass/layout.scss */
+  .row-fluid .PplInfo {
+    width: 100%; }
+  /* line 332, ../components/sass/layout.scss */
+  .row-fluid img.PplImg {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%; }
+  /* line 345, ../components/sass/layout.scss */
   .row-fluid .bar {
     background-color: #5c9bb7;
     background-image: -webkit-linear-gradient(top, #5c9bb7, #5392ad);
@@ -334,7 +317,7 @@ body {
     padding: 10px;
     position: relative;
     min-height: 60px; }
-    /* line 362, ../components/sass/layout.scss */
+    /* line 356, ../components/sass/layout.scss */
     .row-fluid .bar input {
       background: #fff no-repeat 13px 13px;
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU5NEY0RTlFMTA4NzExRTM5RTEzQkFBQzMyRjkyQzVBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU5NEY0RTlGMTA4NzExRTM5RTEzQkFBQzMyRjkyQzVBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTk0RjRFOUMxMDg3MTFFMzlFMTNCQUFDMzJGOTJDNUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTk0RjRFOUQxMDg3MTFFMzlFMTNCQUFDMzJGOTJDNUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4DjA/RAAABK0lEQVR42pTSQUdEURjG8dOY0TqmPkGmRcqYD9CmzZAWJRHVRIa0iFYtM6uofYaiEW2SRJtEi9YxIklp07ZkWswu0v/wnByve7vm5ee8M+85zz1jbt9Os+WiGkYdYxjCOx5wgFeXUHmtBSzpcCGa+5BJTCjEP+0nKWAT8xqe4ArPGEEVC1hHEbs2oBwdXkM7mj/JLZrad437sCGHOfUtcziutuYu2v8XUFF/4f6vMK/YgAH1HxkBYV60AR31gxkBYd6xAeF3VzMCwvzOBpypX8V4yuFRzX2d2gD/l5yjH4fYQEnzkj4fae5rJulF2sMXVrAsaTWttRFu4Osb+1jEDT71/ZveyhouTch2fINQL9hKefKjuYFfuznXWzXMTabyrvfyIV3M4vhXgAEAUMs7K0J9UJAAAAAASUVORK5CYII=);
@@ -351,7 +334,7 @@ body {
       outline: none;
       text-indent: 40px;
       float: left; }
-    /* line 381, ../components/sass/layout.scss */
+    /* line 375, ../components/sass/layout.scss */
     .row-fluid .bar a {
       background: #4987a1 center center no-repeat;
       width: 32px;
@@ -362,16 +345,16 @@ body {
       border-radius: 2px;
       cursor: pointer;
       margin-top: 5px; }
-    /* line 394, ../components/sass/layout.scss */
+    /* line 388, ../components/sass/layout.scss */
     .row-fluid .bar a.active {
       background-color: #c14694; }
-    /* line 398, ../components/sass/layout.scss */
+    /* line 392, ../components/sass/layout.scss */
     .row-fluid .bar a.list-icon {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkYzNkFCQ0ZBMTBCRTExRTM5NDk4RDFEM0E5RkQ1NEZCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkYzNkFCQ0ZCMTBCRTExRTM5NDk4RDFEM0E5RkQ1NEZCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjM2QUJDRjgxMEJFMTFFMzk0OThEMUQzQTlGRDU0RkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjM2QUJDRjkxMEJFMTFFMzk0OThEMUQzQTlGRDU0RkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7h1bLqAAAAWUlEQVR42mL8////BwYGBn4GCACxBRlIAIxAA/4jaXoPEkMyjJ+A/g9MDJQBRhYg8RFqMwg8RJIUINYLFDmBUi+ADQAF1n8ofk9yIAy6WPg4GgtDMRYAAgwAdLYwLAoIwPgAAAAASUVORK5CYII=); }
-    /* line 402, ../components/sass/layout.scss */
+    /* line 396, ../components/sass/layout.scss */
     .row-fluid .bar a.grid-icon {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBEQkMyQzE0MTBCRjExRTNBMDlGRTYyOTlBNDdCN0I4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjBEQkMyQzE1MTBCRjExRTNBMDlGRTYyOTlBNDdCN0I4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MERCQzJDMTIxMEJGMTFFM0EwOUZFNjI5OUE0N0I3QjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MERCQzJDMTMxMEJGMTFFM0EwOUZFNjI5OUE0N0I3QjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4MjPshAAAAXklEQVR42mL4////h/8I8B6IGaCYKHFGEMnAwCDIAAHvgZgRyiZKnImBQsACxB+hNoDAQyQ5osQZIT4gH1DsBZABH6AB8x/JaQzEig++WPiII7Rxio/GwmCIBYAAAwAwVIzMp1R0aQAAAABJRU5ErkJggg==); }
-  /* line 407, ../components/sass/layout.scss */
+  /* line 401, ../components/sass/layout.scss */
   .row-fluid ul.list {
     padding: 0;
     list-style: none;
@@ -380,23 +363,23 @@ body {
     text-align: left;
     max-height: 350px;
     overflow: scroll; }
-    /* line 416, ../components/sass/layout.scss */
+    /* line 410, ../components/sass/layout.scss */
     .row-fluid ul.list li {
       border-bottom: 1px solid #ddd;
       padding: 10px;
       overflow: hidden; }
-      /* line 421, ../components/sass/layout.scss */
+      /* line 415, ../components/sass/layout.scss */
       .row-fluid ul.list li img {
         width: 60px;
         height: 60px;
         float: left;
         border: none; }
-      /* line 428, ../components/sass/layout.scss */
+      /* line 422, ../components/sass/layout.scss */
       .row-fluid ul.list li p {
         margin-left: 75px;
         padding-top: 12px;
         color: #6e7a7f; }
-  /* line 436, ../components/sass/layout.scss */
+  /* line 430, ../components/sass/layout.scss */
   .row-fluid ul.grid {
     padding: 0;
     list-style: none;
@@ -405,19 +388,19 @@ body {
     text-align: left;
     max-height: 350px;
     overflow: scroll; }
-    /* line 445, ../components/sass/layout.scss */
+    /* line 439, ../components/sass/layout.scss */
     .row-fluid ul.grid li {
       display: inline-block;
       padding: 10px;
       overflow: hidden;
       vertical-align: top; }
-      /* line 451, ../components/sass/layout.scss */
+      /* line 445, ../components/sass/layout.scss */
       .row-fluid ul.grid li img {
         width: 100px;
         height: 100px;
         float: left;
         border: none; }
-      /* line 458, ../components/sass/layout.scss */
+      /* line 452, ../components/sass/layout.scss */
       .row-fluid ul.grid li p {
         width: 100px;
         overflow: hidden;
@@ -427,7 +410,7 @@ body {
         color: #fff;
         padding: 5px; }
 
-/* line 471, ../components/sass/layout.scss */
+/* line 465, ../components/sass/layout.scss */
 .aveLine p {
   font: 10px sans-serif;
   background-color: steelblue;

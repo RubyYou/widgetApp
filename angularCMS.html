@@ -1,0 +1,44 @@
+
+
+<div id="angular" class="container">
+
+	<h3>{{title}}</h3>
+	<p>{{intro}}</p>
+
+	<br/>
+	<div class="row">
+		<h3 class="span5">Startup resource list</h3>
+		<div class="span5"><input type="text" ng-model="searchPpl" placeholder="Search for ...." /></div>
+		<div class="span2 gridIcon">
+			<a ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'"><i class="icon-th"></i></a>
+			<a ng-class="{active: layout == 'list'}" ng-click="layout = 'list'"><i class="icon-list-ul"></i></a>
+		</div>
+	</div>
+	<hr/>
+	<div class="row grid" ng-show="layout == 'grid'">
+		<div class="span4" ng-repeat="people in resources | orderBy:'Name' | filter:searchPpl ">
+			<a href="#/angularCMS/{{resources.indexOf(people)}}">
+				<img class="span3 PplImg" src="img/unfoundB.gif"/>
+				<div class="span8">
+					<p><b>{{people.Name}}</b></p>
+					<p>Position: {{people.InCharge}}</p>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="row list" ng-show="layout == 'list'" >
+		<div class="span12" ng-repeat="people in resources | orderBy:'Name' | filter:searchPpl ">
+			<a href="#/angularCMS/{{resources.indexOf(people)}}">
+				<img class="span3 PplImg" src="img/unfoundB.gif"/>
+				<div class="span10">
+					<p><b>{{people.Name}} </b>  |  Position: {{people.InCharge}}  |  Expected involvement: {{people.ExpectSupport}}</p>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<hr/>
+
+</div>
+<script src="_/js/charts.js"></script>

@@ -28,15 +28,15 @@
         "Profile": "Serial Entrepreneur, Non-exec director, Angel Investor",
         "InCharge": "Not much",
         "Supported": "Funding $1,000,000",
-        "ExpectSupport": " ",
-        "RecentActivities": " "
+        "ExpectSupport": " Not yet to be confirm",
+        "RecentActivities": " waiting for matrix to be done."
     },
     {
         "Name": "Tom Glocer",
         "Profile": "CEO of Thomson Reuters",
         "InCharge": "Not much",
         "Supported": "Funding $1,000,000",
-        "ExpectSupport": " ",
+        "ExpectSupport": " Not yet to be confirm",
         "RecentActivities": " "
     },
     {
@@ -44,12 +44,12 @@
         "Profile": "Investor in @PeerIndex, @Cognitive Match, @Commontime, @I-nexus.",
         "InCharge": "adviser",
         "Supported": "Funding $1,000,000",
-        "ExpectSupport": " ",
-        "RecentActivities": " "
+        "ExpectSupport": " advises on user behavior research and marketing strategies",
+        "RecentActivities": " visiting product a view times."
     },
     {
         "Name": "Mitch Pender",
-        "Profile": "Investor in @PeerIndex, @Cognitive Match, @Commontime, @I-nexus.",
+        "Profile": "Investor in @PeerIndex, @Commontime, @I-nexus.",
         "InCharge": "adviser",
         "Supported": "Funding $1,000,000",
         "ExpectSupport": " ",
@@ -58,10 +58,10 @@
     {
         "Name": "Simon Cast",
         "Profile": "Co-founder @ProdPad; Co-organiser, @MindTheProduct, @PCampLDN, @ProductTank; Passionate about creating great products (and wildlife)",
-        "InCharge": "Previous Co-founder",
+        "InCharge": "ex Co-founder",
         "Supported": "Funding $1,000,000",
-        "ExpectSupport": " ",
-        "RecentActivities": " "
+        "ExpectSupport": " Interesting about new project and more collaboration with his own business.",
+        "RecentActivities": " He is an active user of product. "
     },
     {
         "Name": "Sean Park",
@@ -90,7 +90,7 @@
     {
         "Name": "Phil Guest",
         "Profile": "Experienced senior commercial exec with a proven track record of delivering revenue growth in both early stage businesses and large corporations.",
-        "InCharge": "Previous Sales Manager",
+        "InCharge": "Sales Manager",
         "Supported": "Funding $1,000,000",
         "ExpectSupport": " ",
         "RecentActivities": " "
