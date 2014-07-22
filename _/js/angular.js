@@ -73,7 +73,7 @@ app.controller('angularDetailController', function($scope, myService, $routePara
 });
 
 app.controller('phonegapController',function($scope){
-	$scope.title = "Phonegap + Jquery presentation";
+	$scope.title = "Phonegap + jQmobile presentation";
 	$scope.intro = "Two small projects done in the 2011 winter";
 });
 
